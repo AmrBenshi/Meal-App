@@ -26,10 +26,14 @@
   height: 100%;
   object-fit: cover;
   transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  -webkit-transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  -moz-transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  -ms-transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  -o-transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
 }
 @media (max-width: 468px) {
   .header {
-    padding: 0 3%;
+    padding: 0 5%;
   }
   .header h1 {
     font-size: 1.3em;

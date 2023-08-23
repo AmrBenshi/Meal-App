@@ -20,12 +20,11 @@ const MealItemForm = (props) => {
     ) {
       setAmountIsValid(false);
       return;
+    } else {
+      setAmountIsValid(true);
     }
-
-
     props.onAddToCart(enteredAmountNumber);
   };
-
   return (
     <form className={classes.form} onSubmit={submitHandler}>
       <Input
@@ -35,13 +34,13 @@ const MealItemForm = (props) => {
           id: 'amount_' + props.id,
           type: 'number',
           min: '1',
-          max: '5',
+          max: '9',
           step: '1',
           defaultValue: '1',
         }}
       />
       <button>+ Add</button>
-      {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
+      {!amountIsValid && <p className={classes.notValid}>Please enter a valid amount (1-5).</p>}
     </form>
   );
 };

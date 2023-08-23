@@ -10,8 +10,9 @@ html {
 
 body {
   margin: 0;
-  background-image: linear-gradient(to bottom, #ffffff77, #92320c),
+  background-image: linear-gradient(to bottom, #92320c4e, #92320cb9),
     url(assets/bg.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
