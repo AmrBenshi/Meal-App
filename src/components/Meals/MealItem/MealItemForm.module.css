@@ -19,7 +19,7 @@
   border-color: #641e03;
 }
 .notValid {
-  font-size: 0.6rem;
+  font-size: 1rem;
   font-weight: bolder;
   color: red;
 }
